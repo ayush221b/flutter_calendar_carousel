@@ -372,6 +372,12 @@ class _CalendarState<T extends EventInterface> extends State<CalendarCarousel<T>
                 ? widget.onHeaderTitlePressed
                 : () => _selectDateFromPicker(),
           ),
+          Container(
+            margin: EdgeInsets.only(top: 30, bottom: 30),
+            color: Color(0xFFF6F7F9),
+            height: 1.0,
+            width: double.infinity,
+          ),
           WeekdayRow(
             firstDayOfWeek,
             widget.customWeekDayBuilder,
